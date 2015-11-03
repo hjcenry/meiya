@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vk9-Gf-NY2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--附近化妆师-->
+        <scene sceneID="k2y-Dz-rZw">
+            <objects>
+                <tableViewController id="vk9-Gf-NY2" customClass="HomeViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="y71-Oj-YLO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AOw-XD-hBE">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AOw-XD-hBE" id="Wrg-17-qW0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vk9-Gf-NY2" id="9LT-7D-LEf"/>
+                            <outlet property="delegate" destination="vk9-Gf-NY2" id="Df0-IQ-434"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="附近化妆师" id="eHM-ZU-Rs2">
+                        <barButtonItem key="rightBarButtonItem" image="放大镜" id="0c0-EF-LGL"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="titleView" destination="uce-ca-WZE" id="kyf-4O-HKQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SvK-tL-NrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view alpha="0.0" contentMode="scaleToFill" id="uce-ca-WZE" userLabel="titleView">
+                    <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72w-Jc-Ayu">
+                            <rect key="frame" x="129" y="0.0" width="121" height="25"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="121" id="ctg-Jw-V66"/>
+                                <constraint firstAttribute="height" constant="25" id="oWU-JH-KR8"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="140" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="附近化妆师" image="下拉箭头">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市海淀区西三旗街道永泰庄北路44号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRR-cs-Gq2">
+                            <rect key="frame" x="15" y="27" width="319" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="3sP-cY-5Un"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="IRR-cs-Gq2" firstAttribute="leading" secondItem="uce-ca-WZE" secondAttribute="leading" constant="15" id="4EE-AY-eYG"/>
+                        <constraint firstItem="72w-Jc-Ayu" firstAttribute="top" secondItem="uce-ca-WZE" secondAttribute="top" id="Gjs-9G-h0R"/>
+                        <constraint firstItem="72w-Jc-Ayu" firstAttribute="centerX" secondItem="uce-ca-WZE" secondAttribute="centerX" id="OAj-fk-5FR"/>
+                        <constraint firstAttribute="trailing" secondItem="IRR-cs-Gq2" secondAttribute="trailing" constant="46" id="a3Y-xI-Fno"/>
+                        <constraint firstItem="IRR-cs-Gq2" firstAttribute="top" secondItem="72w-Jc-Ayu" secondAttribute="bottom" constant="2" id="kDc-0M-98I"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="428.5" y="-454.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="下拉箭头" width="20" height="20"/>
+        <image name="放大镜" width="22" height="22"/>
+    </resources>
+</document>

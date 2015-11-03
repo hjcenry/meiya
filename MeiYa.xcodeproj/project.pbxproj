@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B41934D1BE8BBBF0010EC86 /* MYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B41934C1BE8BBBF0010EC86 /* MYTabBarController.m */; };
+		0B4193501BE8E2960010EC86 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B41934E1BE8E2960010EC86 /* Home.storyboard */; };
+		0B4193571BE8EB190010EC86 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4193561BE8EB190010EC86 /* HomeViewController.m */; };
 		0B5B45BD1BE896B2000C1C51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B45BC1BE896B2000C1C51 /* main.m */; };
 		0B5B45C01BE896B2000C1C51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B45BF1BE896B2000C1C51 /* AppDelegate.m */; };
 		0B5B45C91BE896B2000C1C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5B45C71BE896B2000C1C51 /* Main.storyboard */; };
@@ -18,6 +21,11 @@
 
 /* Begin PBXFileReference section */
 		0080076069CBEF3F1A3CEB5C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		0B41934B1BE8BBBF0010EC86 /* MYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarController.h; sourceTree = "<group>"; };
+		0B41934C1BE8BBBF0010EC86 /* MYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarController.m; sourceTree = "<group>"; };
+		0B41934F1BE8E2960010EC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		0B4193551BE8EB190010EC86 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0B4193561BE8EB190010EC86 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		0B5B45B81BE896B2000C1C51 /* MeiYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5B45BC1BE896B2000C1C51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B5B45BE1BE896B2000C1C51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B41934A1BE8BB8C0010EC86 /* 导航 */ = {
+			isa = PBXGroup;
+			children = (
+				0B41934B1BE8BBBF0010EC86 /* MYTabBarController.h */,
+				0B41934C1BE8BBBF0010EC86 /* MYTabBarController.m */,
+			);
+			name = "导航";
+			sourceTree = "<group>";
+		};
+		0B4193511BE8EABA0010EC86 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				0B4193551BE8EB190010EC86 /* HomeViewController.h */,
+				0B4193561BE8EB190010EC86 /* HomeViewController.m */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
 		0B5B45AF1BE896B2000C1C51 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +91,12 @@
 		0B5B45BA1BE896B2000C1C51 /* MeiYa */ = {
 			isa = PBXGroup;
 			children = (
+				0B4193511BE8EABA0010EC86 /* 首页 */,
+				0B41934A1BE8BB8C0010EC86 /* 导航 */,
 				0B5B45BE1BE896B2000C1C51 /* AppDelegate.h */,
 				0B5B45BF1BE896B2000C1C51 /* AppDelegate.m */,
 				0B5B45C71BE896B2000C1C51 /* Main.storyboard */,
+				0B41934E1BE8E2960010EC86 /* Home.storyboard */,
 				0B5B45CA1BE896B2000C1C51 /* Assets.xcassets */,
 				0B5B45CC1BE896B2000C1C51 /* LaunchScreen.storyboard */,
 				0B5B45CF1BE896B2000C1C51 /* Info.plist */,
@@ -163,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B5B45CE1BE896B2000C1C51 /* LaunchScreen.storyboard in Resources */,
+				0B4193501BE8E2960010EC86 /* Home.storyboard in Resources */,
 				0B5B45CB1BE896B2000C1C51 /* Assets.xcassets in Resources */,
 				0B5B45D61BE8979A000C1C51 /* Podfile in Resources */,
 				0B5B45C91BE896B2000C1C51 /* Main.storyboard in Resources */,
@@ -226,12 +256,22 @@
 			files = (
 				0B5B45C01BE896B2000C1C51 /* AppDelegate.m in Sources */,
 				0B5B45BD1BE896B2000C1C51 /* main.m in Sources */,
+				0B41934D1BE8BBBF0010EC86 /* MYTabBarController.m in Sources */,
+				0B4193571BE8EB190010EC86 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0B41934E1BE8E2960010EC86 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B41934F1BE8E2960010EC86 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
 		0B5B45C71BE896B2000C1C51 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,8 +376,25 @@
 			baseConfigurationReference = 0080076069CBEF3F1A3CEB5C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MeiYa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ocq.MeiYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,8 +405,25 @@
 			baseConfigurationReference = 70D8F46BDE165E508D51AD2D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MeiYa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ocq.MeiYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
